@@ -1,0 +1,264 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --purple: #5f29a3;
+    --purple-light: #d0aaff;
+  }
+  
+  /* Typography */
+  body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    font-size: 16px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tagline {
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: var(--purple);
+  }
+  
+  /* Layout */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Navigation */
+  nav {
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border-bottom: 1px solid #000;
+  }
+  
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  
+  .logo span {
+    color: var(--purple);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+  }
+  
+  .nav-link:hover {
+    color: var(--purple);
+  }
+  
+  /* Header */
+  header {
+    padding: 8rem 0 4rem;
+    background-color: white;
+  }
+  
+  .header-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .header-image {
+    text-align: center;
+  }
+  
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .price-tag {
+    background-color: black;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+  }
+  
+  /* Buttons */
+  .btn-group {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    border: 1px solid;
+  }
+  
+  .btn-primary {
+    background-color: var(--purple);
+    color: white;
+    border-color: var(--purple);
+  }
+  
+  .btn-secondary {
+    background-color: white;
+    color: black;
+    border-color: black;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+  }
+  
+  .btn-outline-secondary {
+    background-color: transparent;
+    color: var(--purple-light);
+    border-color: var(--purple-light);
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Collection Section */
+  .collection {
+    background-color: black;
+    color: white;
+    padding: 4rem 0;
+  }
+  
+  .collection-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .collection-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .collection-details {
+    padding: 1rem 0;
+  }
+  
+  .price {
+    color: var(--purple-light);
+    font-family: 'Space Mono', monospace;
+  }
+  
+  .collection-text {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+  }
+  
+  .copyright {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    
+    .header-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .header-text {
+      order: 2;
+    }
+    
+    .header-image {
+      order: 1;
+      margin-bottom: 2rem;
+    }
+    
+    .collection-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .btn-group {
+      flex-direction: column;
+    }
+    
+    .btn {
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+  }
