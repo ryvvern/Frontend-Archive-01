@@ -98,7 +98,7 @@ body {
 }
 
 .icon-heart.liked {
-    content: url("./images/heartB1.png");  /* Replace with the path to your red heart icon */
+    content: url("./images/heartB0.png");  
 }
 
 .caption {
