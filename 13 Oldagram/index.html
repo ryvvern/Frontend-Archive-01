@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="./images/starry-night.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css" />
+    <title>Oldagram</title>
+</head>
+<body>
+    <nav>
+    <div class="container header">
+        <img class="logo" src="./images/logo.png" alt="Oldagram logo"/>
+        <img class="avatar" src="./images/ape2.png" alt="User's profile picture"/>
+    </div>
+    </nav>
+
+    <section class="post">
+        <div class="container" id="post-feed">
+        <!-- JavaScript will render posts here -->
+        </div>
+    </section>
+
+    <!-- Template for post structure -->
+    <template id="post-template">
+        <div class="post-container">
+            <div class="post-header">
+                <img class="post-avatar" src="" alt="User avatar"/>
+                <div class="post-user">
+                    <h4 class="name"></h4>
+                    <p class="location"></p>
+                </div>
+            </div>
+
+            <img class="post-image" src="" alt="Post image"/>
+
+            <div class="post-actions">
+                <img class="icon icon-heart" src="./images/heartA.png" alt="Like"/>
+                <img class="icon" src="./images/icon-comment.png" alt="Comment"/>
+                <img class="icon" src="./images/icon-dm.png" alt="DM"/>
+            </div>
+            <p class="likes"></p>
+            <p class="caption">
+                <strong class="username"></strong>
+                <span class="comment"></span>
+            </p>
+            
+        </div>
+    </template>
+    <script src="index.js"></script>
+</body>
+</html>
