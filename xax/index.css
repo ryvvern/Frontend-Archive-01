@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000000;
+    color: whitesmoke;
+    width: 100%;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 25px;
+    gap: 10px
+}
+
+li {
+    cursor: pointer;
+}
+
+.icon {
+    width: 25px;
+}
+
+.align-right {
+    margin-left: auto;
+}
+ 
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 50px 25px 50px 91px;
+}
+
+.lazy {
+    color: #cd6858;
+}
+
+.item {
+    position: relative;
+    margin: 40px 0;
+    max-width: 100%;
+}
+
+.item-img {
+    display: block;
+    width: 85%;
+    max-height: 400px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 15px 8% 0 8%;
+}
+
+.img-banner {
+    position: absolute;
+    top: 0;
+    left: 7.5%;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    z-index: 1;
+}
+
+button {
+    align-self: center;
+    border: none;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b55a4b;
+}
+
+.chatbox-bg {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #dda15e;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    transition: transform 0.2s;
+}
+
+.chatbox-bg:hover {
+    transform: scale(1.1);
+}
+
+.chatbox-img {
+    margin: auto;
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .item-img {
+        width: 95%;
+    }
+    
+    .caption {
+        margin: 15px 2.5% 0 2.5%;
+    }
+    
+    .img-banner {
+        left: 2.5%;
+    }
+}
