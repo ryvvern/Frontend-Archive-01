@@ -1,0 +1,30 @@
+index.js:
+import { menuArray } from "./data.js";
+
+const itemsContainer = document.querySelector('.items')
+const cartSection = document.querySelector('.cart-section')
+
+menuArray.forEach(item => {
+    const foodItem = document.createElement('div')
+    foodItem.classList.add('food-card')
+    foodItem.innerHTML = 
+        <img src='${item.image}' class='food-image' width='40px'>
+        <div class='food-info'>
+            <h2>${item.name}</h2>
+            <p>${item.ingredients.join(", ")}</p>
+            <p class='item-price'>$${item.price}</p>
+        </div>
+        <div class='cart-btn-container'>
+            <button class='add-to-cart-btn'>
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+        </div>
+    
+    itemsContainer.appendChild(foodItem)
+})
+
+const cartIcon = document.querySelector('.add-to-cart-btn')
+
+cartIcon.addEventListener('click', () => {
+    cartSection.classList.toggle('hidden')
+})
